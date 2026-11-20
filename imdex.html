@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Image Hover Effect using Css</title>
+ <style>
+ .gallery {
+display: flex;
+ width: 600px;
+ height: 400px;
+ gap: 10px;
+ }
+
+ .panel {
+ flex: 1;
+ background-size: cover;
+ background-position: center;
+border-radius: 20px;
+ cursor: pointer;
+ background-color: 00rgb(241, 241, 241);
+ filter: grayscale(80%);
+ transition: flex 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+ }
+
+ .p1 {
+ background-image: url(images/12.jpg);
+ }
+
+ .p2 {
+ background-image: url(images/p1.jpg);
+ }
+
+ .p3 {
+background-image: url(images/p2.jpg);
+ }
+
+ .panel:hover {
+ flex: 4;
+ filter: grayscale(0%);
+ }
+ </style>
+ </head>
+ <body>
+ <div class="gallery">
+ <div class="panel p1"></div>
+ <div class="panel p2"></div>
+ <div class="panel 12"></div>
+ </div>
+ </body>
+ </html>
